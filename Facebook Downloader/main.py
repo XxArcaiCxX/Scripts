@@ -6,7 +6,8 @@ from selenium import webdriver
 
 def download_from_group(url):
     # Get HTML
-    driver = webdriver.Chrome('C:\\Users\\ArcaiC\\Documents\\chromedriver.exe')
+    path = "insert here the path to your browser driver"
+    driver = webdriver.Chrome('path')
     driver.get(url)
     if driver.find_element_by_xpath("//button[@class='_54k8 _52jh _56bs _9y0r _56bt']") is not None:
         elem = driver.find_element_by_xpath("//button[@class='_54k8 _52jh _56bs _9y0r _56bt']")
